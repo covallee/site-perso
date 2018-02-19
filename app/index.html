@@ -14,13 +14,18 @@
 
 <header class="site-header">
   <div class="site-header__logo"></div>
-  <nav class="primary-nav primary-nav--pull-right">
-    <ul>
-      <li><a href="">Projects</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="site-header__menu-icon">
+    <div class="site-header__menu-icon__middle"></div>
+  </div>
+  <div class="site-header__nav">
+    <nav class="primary-nav primary-nav--pull-right">
+      <ul>
+        <li><a href="">Projects</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <div class="grid-container">
@@ -34,11 +39,12 @@
         <h1 class="headline headline--no-t-margin"> Constant Vallée-Schmitter</h1>
         <h2>Front End Developer</h2>
         <p>Hi! I'm a freelance front-end developer from Montreal, Canada.</p>
+        <p>After some years in environmental engineering I realized that I love coding and desiging website.</p>
       </div>
    </div>
   </div>
   
-  
+  <div class="page-section--alternate__bleed--left"></div>
   <div id="portfolio" class="page-section page-section--alternate">
     <h3 class="headline headline--centered">My portfolio</h3>
     <div class="portfolio portfolio--left">
@@ -51,7 +57,7 @@
         <a href="http://www.ciraig.org/en/open_io_canada/" title="Open IO Canada" class="btn">Go to website</a>
       </div>
       <div class="portfolio__image">
-        <img src="assets/images/placeholder.jpg" alt="">
+        <img src="assets/images/open-io.png" alt="">
       </div>
     </div>
   
@@ -59,13 +65,13 @@
         <div class="portfolio__title">Wikiaction</div>
         <div class="portfolio__tools">
           <p>Joined the project to code the front-end part of that platform to the specs of the creator. I also implemented the discussion board</p>
-          <p>Tools Used:<span class="icon icon--html5 portfolio__icon"></span><span class="icon icon--css3 portfolio__icon"></span><span class="icon icon--php portfolio__icon"></span><span class="icon icon--mysql portfolio__icon"></span> HTML5, CSS3, PHP, MYSQL</p>
+          <p>Tools Used:<span class="icon icon--html5 portfolio__icon"></span><span class="icon icon--css3 portfolio__icon"></span><span class="icon icon--php portfolio__icon"></span><span class="icon icon--mysql portfolio__icon"></span></p>
         </div>
         <div class="portfolio__link">
           <a href="https://www.wikiaction.org/" title="wikiaction" class="btn">Go to website</a>
         </div>
       <div class="portfolio__image">
-        <img src="assets/images/placeholder.jpg" alt="">
+        <img src="assets/images/wikiaction.png" alt="">
       </div>
     </div>
   
@@ -73,27 +79,27 @@
         <div class="portfolio__title">Claudette Floyd</div>
         <div class="portfolio__tools">
           <p>Webpage for a Montreal shop. The first version was on wordpress and moved the website to shopify. Customized the theme to add a gallery for the collections and tweak the code to taste of the store owner.</p>
-          <p>Tools Used: <span class="icon icon--shopify portfolio__icon"></span>Shopify</p>
+          <p>Tools Used: <span class="icon icon--shopify portfolio__icon"></span><span class="icon icon--mailchimp portfolio__icon"></span></p>
         </div>
         <div class="portfolio__link">
             <a href="https://claudettefloyd.com/" title="Claudette Floyd" class="btn">Go to website</a>
           </div>
      <div class="portfolio__image">
-        <img src="assets/images/placeholder.jpg" alt="">
+        <img src="assets/images/claudette.png" alt="">
       </div>
     </div>
   
     <div class="portfolio portfolio--right">  
-      <div class="portfolio__title">Fondation enfants equateur</div>
+      <div class="portfolio__title">Fondation pour les Enfants de l'Équateur</div>
       <div class="portfolio__tools">
-        <p>A wordpress website for a non profit organisation. Updatted from their old version and included i11n and donations</p>
-        <p>Tools Used: <span class="icon icon--wordpress portfolio__icon"></span>Wordpress</p>
+        <p>A wordpress website for a non profit organisation. Updatted from their old version and included multi languages and donations tools. Since then they are now receiving most of their donations for directly from the website</p>
+        <p>Tools Used: <span class="icon icon--wordpress portfolio__icon"></span></p>
       </div>
       <div class="portfolio__link">
           <a href="http://fee.ong/" title="fee" class="btn">Go to website</a>
         </div>
       <div class="portfolio__image">
-        <img src="assets/images/placeholder.jpg" alt="">
+        <img src="assets/images/fee.png" alt="">
       </div>
     </div>
   
@@ -102,14 +108,23 @@
     </div>
   </div>
 
+  <div class="page-section--alternate__bleed--right"></div>
   <div class="page-section">
-    <h3 class="headline headline--centered">Tools I Use</h3>
-    <p>
-      <span class="icon icon--git portfolio__icon"></span>
-      <span class="icon icon--gulp portfolio__icon"></span>
-      <span class="icon icon--sass portfolio__icon"></span>
-      <span class="icon icon--visualstudiocode portfolio__icon"></span>
-    </p>
+    <div class="skills">
+      <h3 class="headline headline--centered skills__headline">Tools I Use</h3>
+      <div class="skills__icon">
+        <span class="icon icon--git skills__icon"></span>
+        <span class="icon icon--gulp skills__icon"></span>
+        <span class="icon icon--sass skills__icon"></span>
+        <span class="icon icon--visualstudiocode skills__icon"></span>
+      </div>
+      <h3 class="headline headline--centered skills__headline">Tools I'm Learning</h3>
+      <div class="skills__icon">
+        <span class="icon icon--react skills__icon"></span>
+        <span class="icon icon--vuejs skills__icon"></span>
+        <span class="icon icon--docker skills__icon"></span>
+      </div>
+    </div>
   </div>
   
   <div id="contact" class="page-section">
@@ -133,8 +148,19 @@
 </div>
 
 <footer class="site-footer">
-  Created by Constant Vallée-Schmitter @2018
+  <p>Created by Constant Vallée-Schmitter @2018</p>
 </footer>
+
+<div class="modal">
+  <div class="social-icons">
+    <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+    <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+    <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+    <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+  </div>
+</div>
+
+<script src="/temp/scripts/App.js"></script>
 </body>
 
 </html>

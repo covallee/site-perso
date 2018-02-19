@@ -1,0 +1,19 @@
+.skills{
+    display: grid;
+    grid-row-gap: 20px;
+
+    @mixin atMedium{
+    grid-template-columns: repeat(2, 1fr);
+    
+    &__headline{
+        grid-row: 1 / -1;
+    }
+    }
+
+    &__icon{
+        justify-self: center;
+        display: inline-block;
+        transform: scale(1.5);
+        margin: 0 10px;
+    }
+}
