@@ -1,0 +1,18 @@
+.bio{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "picture text";
+    grid-gap: 30px;
+
+    &__picture{
+        grid-area: picture;
+
+        img {
+            border: 6px solid #FFF;
+        }
+    }
+
+    &__text{
+        grid-area: text;
+    }
+}

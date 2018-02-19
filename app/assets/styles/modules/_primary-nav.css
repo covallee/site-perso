@@ -1,0 +1,27 @@
+.primary-nav{
+    padding-top: 10px;
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    &--pull-right{
+        float: right;
+    }
+
+    a{
+        color: #FFF;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}

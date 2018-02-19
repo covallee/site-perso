@@ -1,0 +1,12 @@
+.site-header {
+    padding: 10px 0;
+    position: absolute;
+    z-index: 2;
+    transition: background-color .3s ease-out;
+    width: 100%;
+    background-color: $mainColor;
+
+    @mixin atMedium {
+        position: fixed;
+    }
+}

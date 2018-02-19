@@ -1,15 +1,165 @@
-/* Do not edit that file by hand, instead edit the Gulp template/sprite */
+/*Do not edit modules/_sprite directly as it is generated automatically by gulp Instead edit gulp/template/sprite  */
 
-    icon{
-      background-image: url('/assets/images/sprites/sprite-29b3ebaa.svg');
-    }
-  .icon--Group {
-    width: 133px;
-    height: 39px;
-    background-position: 100% 0;
+  .icon {
+    background-image: url('../../assets/images/sprites/sprite-f8c2240a.svg');
   }
-  .icon--bee_copy {
-    width: 201px;
-    height: 196px;
+
+  .no-svg .icon {
+    background-image: url('../../assets/images/sprites/sprite-f8c2240a.png');
+  }
+  .icon--atom{
+    width: 26px;
+    height: 26px;
+    background-position: 20% 0;
+  }
+
+  .icon--behance{
+    width: 26px;
+    height: 26px;
+    background-position: 20% 75%;
+  }
+
+  .icon--bootstrap{
+    width: 26px;
+    height: 26px;
+    background-position: 0 25%;
+  }
+
+  .icon--css3{
+    width: 26px;
+    height: 26px;
+    background-position: 20% 25%;
+  }
+
+  .icon--digitalocean{
+    width: 26px;
+    height: 26px;
+    background-position: 40% 0;
+  }
+
+  .icon--git{
+    width: 26px;
+    height: 26px;
+    background-position: 40% 25%;
+  }
+
+  .icon--github{
+    width: 26px;
+    height: 26px;
+    background-position: 0 50%;
+  }
+
+  .icon--gitlab{
+    width: 26px;
+    height: 26px;
+    background-position: 20% 50%;
+  }
+
+  .icon--gulp{
+    width: 26px;
+    height: 26px;
+    background-position: 40% 50%;
+  }
+
+  .icon--html5{
+    width: 26px;
+    height: 26px;
+    background-position: 60% 0;
+  }
+
+  .icon--javascript{
+    width: 26px;
+    height: 26px;
+    background-position: 60% 25%;
+  }
+
+  .icon--jquery{
+    width: 26px;
+    height: 26px;
+    background-position: 60% 50%;
+  }
+
+  .icon--linkedin{
+    width: 26px;
+    height: 26px;
+    background-position: 0 75%;
+  }
+
+  .icon--mailchimp{
+    width: 26px;
+    height: 26px;
     background-position: 0 0;
   }
+
+  .icon--mysql{
+    width: 26px;
+    height: 26px;
+    background-position: 40% 75%;
+  }
+
+  .icon--nodejs{
+    width: 26px;
+    height: 26px;
+    background-position: 60% 75%;
+  }
+
+  .icon--npm{
+    width: 26px;
+    height: 26px;
+    background-position: 80% 0;
+  }
+
+  .icon--php{
+    width: 26px;
+    height: 26px;
+    background-position: 80% 25%;
+  }
+
+  .icon--python{
+    width: 26px;
+    height: 26px;
+    background-position: 80% 50%;
+  }
+
+  .icon--sass{
+    width: 26px;
+    height: 26px;
+    background-position: 80% 75%;
+  }
+
+  .icon--shopify{
+    width: 26px;
+    height: 26px;
+    background-position: 0 100%;
+  }
+
+  .icon--squarespace{
+    width: 26px;
+    height: 26px;
+    background-position: 20% 100%;
+  }
+
+  .icon--stackoverflow{
+    width: 26px;
+    height: 26px;
+    background-position: 40% 100%;
+  }
+
+  .icon--twitter{
+    width: 26px;
+    height: 26px;
+    background-position: 60% 100%;
+  }
+
+  .icon--visualstudiocode{
+    width: 26px;
+    height: 26px;
+    background-position: 80% 100%;
+  }
+
+  .icon--wordpress{
+    width: 26px;
+    height: 26px;
+    background-position: 100% 0;
+  }
+

@@ -1,0 +1,12 @@
+.page-section {
+    padding: 4rem 0;
+
+    &--alternate{
+        background-color: $secondaryColor;
+        color: #FFF;
+    }
+
+    &--first{
+        padding-top: 6rem;
+    }
+}

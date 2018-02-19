@@ -1,0 +1,49 @@
+.portfolio{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 30px;
+    padding: 15px 0;
+
+    &--left{
+        grid-template-columns: 1fr 5fr 9fr 1fr;
+        grid-template-areas: 
+        "sidebar1 image title sidebar2"
+        "sidebar1 image text sidebar2"
+        "sidebar1 image link sidebar2";
+    }
+
+    &--right{
+        grid-template-columns: 1fr 9fr 5fr 1fr;
+        grid-template-areas: 
+        "sidebar1 title image sidebar2"
+        "sidebar1 text image sidebar2"
+        "sidebar1 link image sidebar2";
+    }
+
+    &__image{
+        grid-area: image;
+    }
+
+    &__title{
+        grid-area: title;
+        align-self: center;
+        color: $mainColor;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__tools{
+        grid-area: text;
+        font-weight: 300
+    }
+
+    &__link{
+        align-self: center;
+        grid-area: link;
+    }
+
+    &__icon{
+        display: inline-block;
+    }
+}

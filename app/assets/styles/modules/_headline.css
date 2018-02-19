@@ -1,0 +1,12 @@
+.headline{
+    font-weight: 300;
+    font-size: 2.5rem;
+
+    &--centered{
+        text-align: center;
+    }
+
+    &--no-t-margin{
+        margin-top: 0;
+      }
+}
