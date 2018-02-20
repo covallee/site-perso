@@ -5,13 +5,15 @@
     "text";
 
     @mixin atSmall{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(150px,200px) 1fr;
         grid-template-areas: "picture text";
         grid-gap: 20px;
+        align-items: center;
     }
+
     @mixin atMedium{
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: "picture text";
+        grid-template-columns: 0.5fr minmax(200px,300px) minmax(480px, 3fr) 0.5fr;
+        grid-template-areas: "sidebar1 picture text sidebar2";
         grid-gap: 40px;
     }
     
@@ -26,5 +28,7 @@
 
     &__text{
         grid-area: text;
+        padding: 5px;
+
     }
 }

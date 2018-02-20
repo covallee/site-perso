@@ -6,10 +6,15 @@
     z-index: 2;
     transition: background-color .3s ease-out;
     width: 100%;
-    background-color: $mainColor;
+
+    &--is-expanded {
+      background-color: rgba($mainColor, .55);
+    }
+    
     justify-items: center;
 
     @mixin atMedium {
+        background-color: $mainColor;
         position: fixed;
         grid-template-columns: 1fr 12fr 1fr;
     }
@@ -17,9 +22,11 @@
     &__nav {
         grid-column: 2 / -2;
         opacity: 0;
+        
 
         @mixin atMedium{
           opacity: 1;
+          justify-self: end;
         }
 
         &--is-visible{

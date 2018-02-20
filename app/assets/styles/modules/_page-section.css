@@ -1,6 +1,9 @@
 .page-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     grid-column: 2 / -2;
+    @mixin atSmall{
+        padding: 3rem 0;
+    }
 
     &--alternate{
         background-color: $secondaryColor;
@@ -20,6 +23,9 @@
     }
 
     &--first{
-        padding-top: 6rem;
+        padding-top: 4rem;
+        @mixin atMedium{
+            padding-top: 6rem;
+        }
     }
 }

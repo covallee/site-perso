@@ -9,7 +9,6 @@
     li{
         list-style: none;
         display: block;
-        padding-right: 7px;
     
         @mixin atMedium{
           display: block;
@@ -27,17 +26,19 @@
         text-decoration: none;
         font-weight: 300;
         display: block;
-        padding: 5px 8px;
-        font-size: .8rem;
-        background-color: rgba($mainColor, .5);
+        padding: 10px 40px;
+        font-size: 1.2rem;
+        margin: 5px 0;
+        background-color: rgba($mainColor, .9);
     
         @mixin atMedium{
           padding: 12px 0;
           font-size: 1rem;
+          margin:0;
           background-color: transparent;
     
           &.is-current-link {
-            color: #fabb69;
+            color: #44484B;
           }
         }
       }

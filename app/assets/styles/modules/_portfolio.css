@@ -11,6 +11,7 @@
 
     &__image{
         grid-area: image;
+        width: 100%;
     }
 
     &__title{
@@ -26,6 +27,7 @@
         grid-area: text;
         font-weight: 200;
         font-size: 0.9rem;
+        padding-bottom: 5px;
     }
 
     &__link{
@@ -41,12 +43,12 @@
 
     @mixin atMedium{
         grid-template-rows: repeat(3,auto);
-        grid-gap: 30px;
+        grid-gap: 10px 5px;
         padding: 15px 0;
         margin-bottom: 0px;
     
         &--left{
-            grid-template-columns: 1fr 7fr 7fr 2fr;
+            grid-template-columns: 0.5fr minmax(300px,500px) minmax(250px, 450px) 1fr;
             grid-template-areas: 
             "sidebar1 image title sidebar2"
             "sidebar1 image text sidebar2"
@@ -55,23 +57,29 @@
         }
     
         &--right{
-            grid-template-columns: 2fr 7fr 7fr 1fr;
+            grid-template-columns: 1fr minmax(250px, 450px) minmax(300px,500px) 1fr;
             grid-template-areas: 
             "sidebar1 title image sidebar2"
             "sidebar1 text image sidebar2"
             "sidebar1 link image sidebar2";
             justify-items: end;
         }
-    
+
+        &__image{
+            align-self: center;
+        }
         &__link{
-            justify-self: none;
+            align-self: start;
         }
 
         &__title{
+            align-self: end;
         }
 
         &__tools{
             font-size: 1rem;
+            padding-bottom: 0;
+            
         }
     }
 }

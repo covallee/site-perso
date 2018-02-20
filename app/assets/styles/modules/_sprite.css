@@ -1,11 +1,11 @@
 /*Do not edit modules/_sprite directly as it is generated automatically by gulp Instead edit gulp/template/sprite  */
 
   .icon {
-    background-image: url('../../assets/images/sprites/sprite-3d93ecd1.svg');
+    background-image: url('../../assets/images/sprites/sprite-3c269062.svg');
   }
 
   .no-svg .icon {
-    background-image: url('../../assets/images/sprites/sprite-3d93ecd1.png');
+    background-image: url('../../assets/images/sprites/sprite-3c269062.png');
   }
   .icon--atom{
     width: 26px;
@@ -16,7 +16,7 @@
   .icon--behance{
     width: 26px;
     height: 26px;
-    background-position: 40% 75%;
+    background-position: 60% 75%;
   }
 
   .icon--bootstrap{
@@ -94,13 +94,13 @@
   .icon--mailchimp{
     width: 26px;
     height: 26px;
-    background-position: 0 0;
+    background-position: 40% 75%;
   }
 
   .icon--mysql{
     width: 26px;
     height: 26px;
-    background-position: 60% 75%;
+    background-position: 0 0;
   }
 
   .icon--nodejs{
@@ -121,63 +121,69 @@
     background-position: 80% 50%;
   }
 
-  .icon--python{
+  .icon--postcss{
     width: 26px;
     height: 26px;
     background-position: 80% 75%;
   }
 
-  .icon--react{
+  .icon--python{
     width: 26px;
     height: 26px;
     background-position: 0 100%;
   }
 
-  .icon--sass{
+  .icon--react{
     width: 26px;
     height: 26px;
     background-position: 20% 100%;
   }
 
-  .icon--shopify{
+  .icon--sass{
     width: 26px;
     height: 26px;
     background-position: 40% 100%;
   }
 
-  .icon--squarespace{
+  .icon--shopify{
     width: 26px;
     height: 26px;
     background-position: 60% 100%;
   }
 
-  .icon--stackoverflow{
+  .icon--squarespace{
     width: 26px;
     height: 26px;
     background-position: 80% 100%;
   }
 
-  .icon--twitter{
+  .icon--stackoverflow{
     width: 26px;
     height: 26px;
     background-position: 100% 0;
   }
 
-  .icon--visualstudiocode{
+  .icon--twitter{
     width: 26px;
     height: 26px;
     background-position: 100% 25%;
   }
 
-  .icon--vuejs{
+  .icon--visualstudiocode{
     width: 26px;
     height: 26px;
     background-position: 100% 50%;
   }
 
-  .icon--wordpress{
+  .icon--vuejs{
     width: 26px;
     height: 26px;
     background-position: 100% 75%;
+  }
+
+  .icon--wordpress{
+    width: 26px;
+    height: 26px;
+    background-position: 100% 100%;
   }
 
