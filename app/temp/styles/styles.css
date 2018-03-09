@@ -451,9 +451,9 @@ template {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
-    background-color: #c0c5ce;
+    background-color: #e8e7ef;
 }
 
 img{
@@ -791,6 +791,7 @@ img{
 .primary-nav li{
         list-style: none;
         display: block;
+        text-transform: uppercase;
       }
 
 @media (min-width: 800px){
@@ -840,7 +841,7 @@ img{
 }
 
 .btn--secondary-color{
-        background-color: #44484B;
+        background-color: #C0C0C0;
     }
 
 .btn:hover{
@@ -862,17 +863,17 @@ img{
   }
 
 .page-section--alternate{
-        background-color: #44484B;
+        background-color: #C0C0C0;
         color: #FFF;
     }
 
 .page-section--alternate__bleed--left{
-                background-color: #44484B;
+                background-color: #C0C0C0;
                 grid-column: 1 / span 1;
             }
 
 .page-section--alternate__bleed--right{
-                background-color: #44484B;
+                background-color: #C0C0C0;
                 grid-column: 3 / span 1;
             }
 
@@ -911,29 +912,29 @@ img{
     "text";
 }
 
-@media (min-width: 530px){
-
-.bio{
+/* @mixin atSmall{
         grid-template-columns: minmax(150px,200px) 1fr;
         grid-template-areas: "picture text";
         grid-gap: 20px;
+        align-items: center;
+    } */
+
+@media (min-width: 800px){
+
+.bio{
+        grid-template-columns: 0.2fr minmax(275px,300px) minmax(430px, 3fr) 0.1fr;
+        grid-template-areas: "sidebar1 picture text sidebar2";
+        grid-gap: 35px;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center
 }
   }
 
-@media (min-width: 800px){
-
-.bio{
-        grid-template-columns: 0.5fr minmax(200px,300px) minmax(480px, 3fr) 0.5fr;
-        grid-template-areas: "sidebar1 picture text sidebar2";
-        grid-gap: 40px
-}
-  }
-
 .bio__picture{
         grid-area: picture;
+        max-width: 300px;
+        justify-self: center;
     }
 
 .bio__picture img {
@@ -957,21 +958,21 @@ img{
 }
 
 .headline{
-    font-weight: 400;
-    font-size: 1.6rem;
+    font-weight: 600;
+    font-size: 1.8rem;
 }
 
 @media (min-width: 530px){
 
 .headline{
-        font-size: 1.7rem
+        font-size: 2.6rem
 }
   }
 
 @media (min-width: 800px){
 
 .headline{
-        font-size: 2.5rem
+        font-size: 2.8rem
 }
   }
 
@@ -1012,7 +1013,7 @@ img{
 
 .portfolio__tools{
         grid-area: text;
-        font-weight: 200;
+        font-weight: 300;
         font-size: 0.9rem;
         padding-bottom: 5px;
     }

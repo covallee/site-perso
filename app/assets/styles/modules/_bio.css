@@ -4,22 +4,25 @@
     grid-template-areas: "picture"
     "text";
 
-    @mixin atSmall{
+    /* @mixin atSmall{
         grid-template-columns: minmax(150px,200px) 1fr;
         grid-template-areas: "picture text";
         grid-gap: 20px;
         align-items: center;
-    }
+    } */
 
     @mixin atMedium{
-        grid-template-columns: 0.5fr minmax(200px,300px) minmax(480px, 3fr) 0.5fr;
+        grid-template-columns: 0.2fr minmax(275px,300px) minmax(430px, 3fr) 0.1fr;
         grid-template-areas: "sidebar1 picture text sidebar2";
-        grid-gap: 40px;
+        grid-gap: 35px;
+        align-items: center;
     }
     
 
     &__picture{
         grid-area: picture;
+        max-width: 300px;
+        justify-self: center;
 
         img {
             border: 6px solid #FFF;
