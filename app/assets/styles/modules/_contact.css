@@ -6,14 +6,13 @@
     justify-items: center;
     align-items: center;
     
-
     @mixin atSmall{
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: 100px;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: 100px;
     }
 
     &__icon{
-    display: block;
-    transform: scale(3);
+        display: block;
+        transform: scale(3);
     }
 }

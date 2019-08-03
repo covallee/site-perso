@@ -1,12 +1,12 @@
-.primary-nav{
+.primary-nav {
     padding-top: 0px;
 
-    ul{
+    ul {
         margin: 0;
         padding: 0;
     }
 
-    li{
+    li { 
         list-style: none;
         display: block;
         text-transform: uppercase;
@@ -18,19 +18,25 @@
         }
       }
 
-    &--pull-right{
+    &--pull-right {
         float: right;
     }
 
-    a{
+    a {
         color: $mainFontColor;
         text-decoration: none;
         font-weight: 300;
+        letter-spacing: 0.05em;
         display: block;
         padding: 10px 40px;
         font-size: 1.2rem;
         margin: 5px 0;
         background-color: rgba($mainColor, .9);
+
+        &:hover,
+        &:focus {
+            font-weight: 500;
+        }
     
         @mixin atMedium{
           padding: 12px 0;
@@ -38,9 +44,9 @@
           margin:0;
           background-color: transparent;
     
-          &.is-current-link {
-            color: #44484B;
-          }
+            &.is-current-link {
+                color: #44484B;
+            }
         }
-      }
+    }
 }
