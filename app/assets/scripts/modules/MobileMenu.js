@@ -1,21 +1,22 @@
-import $ from 'jquery';
-
 class MobileMenu {
   constructor() {
-    this.siteHeader = $(".site-header");
-    this.menuIcon = $(".site-header__menu-icon");
-    this.menuContent = $(".site-header__nav");
+    this.siteHeader = document.querySelector(".site-header");
+    this.menuIcon = document.querySelector(".site-header__menu-icon");
+    this.menuContent = document.querySelector(".site-header__nav");
     this.events();
   }
 
   events() {
-    this.menuIcon.click(this.toggleTheMenu.bind(this));
+    this.menuIcon.addEventListener('click', () => {
+      this.toggleTheMenu();
+    });
   }
 
   toggleTheMenu() {
-    this.menuContent.toggleClass("site-header__nav--is-visible");
-    this.siteHeader.toggleClass("site-header--is-expanded");
-    this.menuIcon.toggleClass('site-header__menu-icon--close-x');
+    console.log('test');
+    this.menuContent.classList.toggle("site-header__nav--is-visible");
+    this.siteHeader.classList.toggle("site-header--is-expanded");
+    this.menuIcon.classList.toggle('site-header__menu-icon--close-x');
   }
 }
 
