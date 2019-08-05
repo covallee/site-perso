@@ -3,18 +3,25 @@
     grid-row-gap: 20px;
 
     @mixin atMedium{
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     
-    &__headline{
-        grid-row: 1 / -1;
+        &__headline{
+            grid-row: 1 / -1;
+        }
     }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 500px;
     }
 
     &__icon{
         justify-self: center;
-        display: inline-block;
-        transform: scale(1.5);
-        margin: 0 10px;
-
+        display: block;
+        transform: scale(2);
+        margin: 20px;
     }
 }
